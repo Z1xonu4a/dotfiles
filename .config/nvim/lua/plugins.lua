@@ -7,18 +7,22 @@ end
 vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
-  use 'wbthomason/packer.nvim'
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'MunifTanjim/prettier.nvim'
   use {
-    "craftzdog/solarized-osaka.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
+    'glepnir/lspsaga.nvim',
+    commit = 'ae099d5844b005cec66a66ab30a44d3bf8867af9'
   }
+  use 'norcalli/nvim-colorizer.lua'
+  use 'wbthomason/packer.nvim'
   use {
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
   use 'kyazdani42/nvim-web-devicons'
+  use 'akinsho/nvim-bufferline.lua'
   use 'L3MON4D3/LuaSnip'
   use 'hoob3rt/lualine.nvim'
   use 'onsails/lspkind-nvim'
