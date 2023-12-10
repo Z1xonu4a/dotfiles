@@ -1,1 +1,1 @@
-# dotfiles old version config DevasLife(CrafzDog)
+# dotfiles old version config DevasLife(CrafzDog) - No git configuration
